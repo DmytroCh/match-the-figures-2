@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match the figures</title>
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="select-css.js" type="text/javascript"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155305736-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155305736-1', {
+        'custom_map': {'dimension1': 'user-agent'}
+    });
+    
+    var dimensionValue = navigator.userAgent;
+    gtag('event', 'user_agent_dimension', {'user-agent': dimensionValue});
+    </script>
+</head>
+
+<body>
+    <div id="loading"></div>
+    <div class="container">
+        <div id="black-display"></div>
+        <div id="alert-layout">
+            <div class="alert-dialog">
+                <div class="alert-message">Congratulations!</div>
+                <div id="you-did-it">You did it in:</div>
+                <div id="final-time" class="alert-message details">Time</div>
+                <div id="final-steps" class="alert-message details">Moves</div>
+                <button id="confirm" class="btn btn-primary" type="button" onclick="buttonActions()">Ok</button>
+            </div>
+        </div>
+        <div class="background-image"></div>
+        <div id="play-board" class ="images-block">
+            <div class="top-menu">
+                <div class="menu">                    
+                    <button id = "start" class="btn btn-primary" type="button" onclick="buttonActions()">Restart</button>
+                    <div id="timer"></div>
+                    <div id="counter"></div>
+                </div>
+            </div>
+            <div id='grid' class="grid-images">
+
+            </div>
+        </div>
+    </div>
+    <footer>support: figuresmatch@gmail.com</footer>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

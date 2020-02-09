@@ -1,0 +1,238 @@
+@import "general.css";
+
+/* remove loading screen*/
+#loading{
+    z-index: -10;
+    visibility: hidden;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+img{
+    background-color: black;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: var(--navigation-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.background-image {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/backgroud.svg");
+    background-size: cover;
+    background-color: black;
+    position: fixed;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.images-block{
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--grey-color);
+    z-index: 1;
+    border-radius: 20px;
+    border: solid 4px var(--extra-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 3%;
+    overflow: auto;
+}
+
+.top-menu{    
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.51);    
+    background-color: var(--menu-color);
+    /*opacity: 0.7;*/
+}
+
+.menu{
+    height: 50px;
+    width: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter, #timer{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.grid-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image{
+    margin:10px;
+}
+
+/*.grid-images{
+    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));   
+    justify-items: center;
+    align-items: center;
+}*/
+
+.image{
+    height: 100px;
+    width: 100px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.finded{
+    opacity: 0.5;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--menu-color);
+    border-radius: 7px;
+}
+
+.selected{    
+    animation: show 0.3s ease-in-out 0.1s forwards; 
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+img{
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+#black-display{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+    position: fixed;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+#alert-layout{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.vissible{
+    visibility: visible !important;
+}
+
+
+.alert-dialog{
+    background-color: var(--grey-color);
+    padding: 20px;
+    border: solid 2px var(--extra-grey);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-message{
+    margin: 10px;
+    font-size: 2em;
+}
+
+.details{
+    font-size: 1em;
+}
+
+#final-steps{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.focused{
+    opacity: 0.2;
+}
+
+:focus{
+    border: solid 1px var(--navigation-color);
+    outline-width: 0px;
+    outline-color: var(--navigation-color);
+}
+
+/*override bootstrap*/
+.btn{
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: var(--grey-color);
+    border-color: var(--extra-grey);   
+    opacity: 0.8;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--grey-color);
+    border-color: #fff; 
+    outline-color: #fff;
+    opacity: 1;
+}
+
+.btn-primary:active{
+    background-color:var(--extra-grey);
+    border-color: var(--grey-color);
+    opacity: 0.7;   
+}
+
+.btn-primary:visited{
+    background-color: var(--grey-color);
+    border-color: var(--extra-grey);   
+    opacity: 0.7;
+}
