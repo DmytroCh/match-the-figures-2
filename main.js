@@ -42,9 +42,9 @@ function generatePositions(images) {
     counter = 0;
 
     while (counter < 2) {
-      offeredPosition = Math.floor(Math.random(20) * 20) + 1;
+      offeredPosition = Math.floor(Math.random(20) * 20) + 1; //if(!arr.includes(offeredPosition)){
 
-      if (!arr.includes(offeredPosition)) {
+      if (arr.indexOf(offeredPosition) == -1) {
         arr.push({
           position: offeredPosition,
           imageUrl: "./img/".concat(element, ".svg")
@@ -67,7 +67,8 @@ function setListeners() {
   grid.addEventListener('click', function (event) {
     //console.log(event.target);
     if (event.target.classList.contains("cover")) {
-      if (!opened.includes(event.target)) {
+      //if(!opened.includes(event.target)){
+      if (opened.indexOf(event.target) == -1) {
         if (first == null) {
           first = event.target;
           first.classList.add("selected");
