@@ -63,7 +63,7 @@ footer{
 
 .menu{
     height: 50px;
-    width: 400px;
+    width: 450px;
     position: relative;
     display: block;
     margin: auto;
@@ -134,8 +134,8 @@ img{
 }
 
 #alert-layout{
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 720px;
     z-index: 3;
     position: fixed;
     display: block;
@@ -160,18 +160,18 @@ img{
 }
 
 .alert-message{
-    width: 240px;
+    width: 250px;
     display: block;
     position: relative;
     margin: auto;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 #you-did-it{
-    width: 100px;
+    width: 110px;
     position: absolute;
     left: 115px;
-    bottom: 100px;
+    bottom: 110px;
 }
 
 .details{
@@ -179,14 +179,14 @@ img{
 }
 
 #final-time{
-    width: 110px;
+    width: 120px;
     position: absolute;
     left: 107px;
-    bottom: 80px;
+    bottom: 85px;
 }
 
 #final-steps{
-    width: 80px;
+    width: 90px;
     position: absolute;
     left: 122px;
     bottom: 60px;
