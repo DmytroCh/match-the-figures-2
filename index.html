@@ -12,16 +12,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155305736-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-155305736-1', {
-        'custom_map': {'dimension1': 'user-agent'}
-    });
-    
-    var dimensionValue = navigator.userAgent;
-    gtag('event', 'user_agent_dimension', {'user-agent': dimensionValue});
+        gtag('config', 'UA-155305736-1', {
+            'custom_map': {'dimension1': 'user-agent'}
+        });
+        
+        var dimensionValue = navigator.userAgent;
+        gtag('event', 'user_agent_dimension', {'user-agent': dimensionValue});
     </script>
 </head>
 
