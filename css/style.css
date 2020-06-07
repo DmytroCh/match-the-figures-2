@@ -9,6 +9,7 @@
 body {
     margin: 0;
     background: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img{
@@ -235,4 +236,14 @@ img{
     background-color: var(--grey-color);
     border-color: var(--extra-grey);   
     opacity: 0.7;
+}
+
+#donation-block{
+    position: absolute;
+    font-size: 28px;
+    padding-right: 10px;
+    padding-top: 10px;
+    left: 20px;
+    bottom: 5px;
+    color: #f3ce5a;
 }

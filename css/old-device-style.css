@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: #fff;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img{
@@ -251,4 +252,14 @@ footer{
 #loading{
     z-index: -10;
     visibility: hidden;
+}
+
+#donation-block{
+    position: absolute;
+    font-size: 28px;
+    padding-right: 10px;
+    padding-top: 10px;
+    left: 20px;
+    bottom: 5px;
+    color: #f3ce5a;
 }
