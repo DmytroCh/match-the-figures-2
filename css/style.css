@@ -18,6 +18,7 @@ img{
 
 footer{
     position: fixed;
+    font-size: 14px;
     bottom: 10px;
     right: 10px;
     color: var(--navigation-color);
@@ -246,4 +247,20 @@ img{
     left: 20px;
     bottom: 5px;
     color: #f3ce5a;
+}
+
+#donation-block > img{
+    width: 195px;
+    height: 195px;
+}
+
+#patreon-block > img{
+    border-radius: 0px;
+    margin-bottom: -2px;
+    width: 32px;
+    height: 32px;
+}
+
+#patreon-block > div{
+    display: inline;
 }
